@@ -1,0 +1,1 @@
+Acesse a especificação técnica da api em /especificao-tecnica

@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "7b1f31c7-6fde-4ffe-be67-82badc0d23c8",
+		"name": "Carro-Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cadastrar carro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\":\"Jeep\",\r\n    \"modelo\":\"Renegade\",\r\n    \"dataCadastro\":\"2021-07-26\",\r\n    \"valor\":60000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/carros",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"carros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar carro por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/carros/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"carros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar lista paginada de carros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/carros",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"carros"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
