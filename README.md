@@ -1,1 +1,1 @@
-Acesse a especificação técnica da api em /especificao-tecnica
+Acesse a especificação técnica da api em /especificao-tecnica/Especificação Técnica.pdf
